@@ -232,12 +232,10 @@ html, body {
   }
 
 
-  .container{
-    max-width: 800px;
-    margin:  0 auto;
+  
     
 
-  }
+  
 .yt-holder{
   position: relative;
   overflow: hidden;
@@ -261,32 +259,58 @@ html, body {
     width: 100%;
   }
 
-  
-  
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-  
-  
+  .card{
+    background: white;
+    width: 350px;
+    margin: 25px;
+    border-radius: 15px;
 
+  }
+  .card-image{
 
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
 
+  }
 
-  
-   
+  .car-1{
+    background-image: url("C:/Users/Moham/OneDrive - MBO Utrecht/PRO-PRAK/Escape Room/voormijzelf/img/shutterstock_1628745568_0.jpg");
+  }
 
-  
-  
-   
-   
+  .car-2{
+    background-image: url("C:/Users/Moham/OneDrive - MBO Utrecht/PRO-PRAK/Escape Room/voormijzelf/img/Schermafbeelding 2021-11-25 193356.png");
 
-   
-   
-   
+  }
+  .car-3{
+    background-image: url("C:/Users/Moham/OneDrive - MBO Utrecht/PRO-PRAK/Escape Room/voormijzelf/img/download.jpg");
+  }
 
-   
-  
-  
-  
-   
+  .card h2{
+    padding:10px
+  }
+  .card p{
+    padding: 10px;
+  }
+  .card a{
+    background-color: red ;
+    color: whitesmoke;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
 
-    
-  
+  }
+  .card:hover{
+    background-color: gray;
+    color: whitesmoke;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
