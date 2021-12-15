@@ -6,7 +6,7 @@ html, body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom right, #3c4053  , whitesmoke);
+    background-color:#3c4053;  
     /* background-image: linear-gradient(to bottom right, #E5A49c,#3C4CAD ); */
       
   
