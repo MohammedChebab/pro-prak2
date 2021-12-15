@@ -52,6 +52,7 @@ html, body {
     
     .navbar-links li:hover {
       background-color: #555;
+      transition: 0.8s;
     }
     
     .toggle-button {
@@ -108,18 +109,17 @@ html, body {
     .textinfomatie{
         display: block;
         block-size: 55%;
-        background: whitesmoke;
-        
         margin: 80px;
 
     }
 
 
-    .textinfomatie h1,h6{
+    .textinfomatie h1,h6,h4{
         text-align: center;
         margin: 100px;
         padding: 10px;
         margin: 20px;
+        color: whitesmoke;
        
     }
 
@@ -182,26 +182,17 @@ html, body {
     @media (max-width: 280px) {
       .textinfomatie ,h4 { font-size: 15px;
         width: 80%;
-        background-color: white;
         margin-left: 35px;
        }
-       h4{
-        
-         background-color: whitesmoke;
-       }  
+      
     }
     @media (max-width: 400px) {
       .textinfomatie ,h4 { font-size: 15px;
         width: 80%;
-        background-color: white;
         margin-left: 35px;
         
         
 
-       }
-       h4{
-        
-         background-color: whitesmoke;
        }
     }
 

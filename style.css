@@ -51,6 +51,7 @@ html, body {
     
     .navbar-links li:hover {
       background-color: #555;
+      transition: 0.8s;
     }
     
     .toggle-button {
