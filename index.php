@@ -14,24 +14,8 @@
 
 
     
-    <header>
-      <nav class="navbar">
-        <div class="brand-title">soloshop</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-          <li><a href="index.html">Home</a></li>
-            <li><a href="informatie.html">infomatie</a></li>
-            <li><a href="index.php">referenties</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-        </div>
-      </nav>
+   
+     
       <h1>referenties</h1>
       <h1>vul hier onder je mening over utrecht pizza</h1>
       <div class="container">
