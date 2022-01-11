@@ -14,6 +14,21 @@ html, body {
     box-sizing: border-box;
   }  
     
+  h1 {
+    text-align: center;
+        margin: 100px;
+        padding: 10px;
+        margin: 20px;
+        color: whitesmoke;
+  }
+
+  .p1 {
+    text-align: center;
+        margin: 100px;
+        padding: 10px;
+        margin: 20px;
+        color: whitesmoke;
+  }
   
    
     .navbar {
