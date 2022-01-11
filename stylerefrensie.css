@@ -166,4 +166,9 @@ html, body {
     }
    
 
-    
+    footer {
+      padding: 1rem 0;
+      background-color: #333;
+      text-align: center;
+      color: #fff;
+    }
