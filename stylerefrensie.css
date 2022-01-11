@@ -6,7 +6,7 @@ html, body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    background-color:#3c4053;  
+    background-color: #3c4053; 
     /* background-image: linear-gradient(to bottom right, #E5A49c,#3C4CAD ); */
       
   
@@ -160,5 +160,10 @@ html, body {
     h3{
       color: #ccc;
     }
+
+    label {
+      color: whitesmoke;
+    }
    
+
     
