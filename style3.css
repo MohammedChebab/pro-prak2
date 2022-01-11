@@ -16,19 +16,22 @@ html, body {
     
   h1 {
     text-align: center;
-        margin: 100px;
-        padding: 10px;
-        margin: 20px;
+       
         color: whitesmoke;
   }
 
   .p1 {
     text-align: center;
-        margin: 100px;
-        padding: 10px;
-        margin: 20px;
+       
         color: whitesmoke;
+        text-decoration: none;
+        font-size: 12px;
   }
+  a{
+      text-decoration: none;
+      color: gray;
+  }
+ 
   
    
     .navbar {
