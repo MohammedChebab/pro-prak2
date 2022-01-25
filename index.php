@@ -20,6 +20,7 @@
      
       <h1>referenties</h1>
       <h1>vul hier onder je mening over utrecht pizza</h1>
+     <div class="read"><a href="read.php">read</a></div>
       <div class="container">
       <form action="create.php" method="post">
       

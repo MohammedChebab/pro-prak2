@@ -148,7 +148,7 @@ html, body {
   
   div#masthead div.slider-item img {
     object-fit: cover;
-    object-position: 0 60%;
+    object-position: 0 100%;
     z-index: 1;
     width: 100%;
   }
