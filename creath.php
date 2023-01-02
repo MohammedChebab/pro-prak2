@@ -1,38 +1,31 @@
 <?php
 // var_dump($_POST);
-include("connect_db.php");$sql = "select * from`texttest`"; 
-$result= mysqli_query($conn,$sql);
+echo $_POST["firstname"];
+$firstname = $_POST["firstname"];
+$subject = $_POST["subject"];
+$lastname = $_POST["lastname"];
+$email = $_POST["email"];
+echo "mijn voleddige naam is: " . $_POST["firstname"] . " " . $_POST["subject"] . " " . $_POST["lastname"]. " " . $_POST["email"]. "jaar oud". $_POST["woonplaats"];
 
-
-
-include("./function.php");
-
+echo "<hr>";
 //  hier worden de gegevens die nodig voor verbinding met de 
+$dbserver = "localhost";
+$dbuser = "root";
+$password = "";
+$dbname = "utrechtpizzacontact";
 
-echo $_POST["kleintext"];
-$kleintext = sanitize($_POST["kleintext"]);
-$hoodtext =sanitize($_POST["hoodtext"]);
-$img =sanitize($_POST["img"]);
-$readmore =sanitize($_POST["readmore"]);
-echo "mijn voleddige naam is: " . $_POST["kleintext"] . " " . $_POST["hoodtext"]. " " . $_POST["img"]. " " . $_POST["readmore"] ;
+$conn = mysqli_connect($dbserver, $dbuser, $password, $dbname);
 
- $sql ="INSERT INTO `texttest` (id, kleintext, hoodtext, img,readmore) VALUES (NULL, ?, ?,?,?);";
-//  $sql= "INSERT INTO `contact` (`firstname`, `lastname`, `email`, `subject` ) 
-//  VALUES ('$firstname', '$lastname', '$email', '$subject');";
 
-$stmt = $conn->prepare($sql);
-
-if (!$stmt) {
-    echo "stmt failed";
-    die();
-}
-
-$stmt->bind_param('ssss', $kleintext, $hoodtext,$img,$readmore);
-
-$result = $stmt->execute();
+// $sql ="INSERT INTO `users` (`id`, `firstname`, `infix`, `lastname`, `age`,`woonplaats`,`gender`)
+//          VALUES (NULL, '$firstname', '$infix', '$lastname', '$age','$woonplaats','$gender');";
+ $sql= "INSERT INTO `contact` (`firstname`, `lastname`, `email`, `subject` ) 
+ VALUES ('$firstname', '$lastname', '$email', '$subject');";
+$result = mysqli_query($conn,$sql);
 
 if($result){
-    header("location: ./news.php");  
+    header("Location: index.php");  
 }
 
 ?>
+

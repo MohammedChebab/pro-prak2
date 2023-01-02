@@ -1,7 +1,7 @@
 <?php
 include("connect_db.php");
 
-$sql = "SELECT * from `texttest`"; 
+$sql = "SELECT * from `contact`"; 
 $result = mysqli_query($conn, $sql);
 
 
@@ -12,57 +12,40 @@ $rows = "";
 while($record = mysqli_fetch_assoc($result)){
     // var_dump($record);
     $rows .="<tr>
-                <td>{$record['id']}</td>
-                <td>{$record['kleintext']}</td>
-
-                <td>{$record['hoodtext']}</td>
                
-                <td>{$record['img']}</td>
-                <td>{$record['readmore']}</td>
-                <td>
-                <a href= 'update.php?id={$record['id']}'>
-               update
-                </a>
-                
-                <td>
-                <a href= 'delete.php?id={$record['id']}'>
-               delete
-                </a>
-            
-                </td>
+                <td>{$record['firstname']}</td>
+
+                <td>{$record['lastname']}</td>
+                <td>{$record['email']}</td>
+                <td>{$record['subject']}</td>
+               
                 
   
-             </tr>"
-             ;
+             </tr>";
              
 }
 
 ?>
-    <style> a {
-                  color: whitesmoke;
-                  background-color: red;
-                  text-decoration: none;
-                  width: 35%;
-                  height: 30%;
-                }</style>
+    
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="stylerefrensie.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>read</title>
+      
+    <title>Hello, world!</title>
   </head>
   <body>
    
-  <h1>Referenties</h1>
-      <h1>Hier zie je andere mensen mening. </h1>
-  <div class="read"><a href="index.php">read</a></div>
-
   
-        
+          <a class="btn btn-success" href="index.php">NEW RECORD </a>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -73,14 +56,11 @@ while($record = mysqli_fetch_assoc($result)){
  
     <thead>
         <tr>
-        <th>id</th>
-            <th>kleintext</th>
-            <th>hoodtext</th>
            
-            <th>img</th>
-            <th>readmore</th>
-            <th>update</th>
-            <th>delete</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>email</th>
+            <th>subject</th>
            
 
 
